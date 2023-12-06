@@ -1,0 +1,145 @@
+
+<%-include("header.ejs")%>
+<style>*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body
+{
+    min-height: 120%;
+    width: 100%;
+}
+#nav
+{
+   height: 100px; 
+   width: 100%;
+   background-color: #fff;
+  
+}
+#nav>img
+{
+    
+    margin: 20px 20px;
+}
+#nav>button
+{
+    padding: 5px 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(219, 30, 9);
+     position: absolute;
+    right: 20px;
+    top: 28px;
+}
+#nav>button>a
+{
+color: #fff;
+font-size: 20px;
+}
+#nav>button>i
+{
+color: #fff;
+font-size: 20px;
+text-decoration: none;
+}
+#nav1
+{
+    height: 50px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#nav1>a
+{
+    text-decoration: none;
+    color: #fff;
+}
+h2
+{
+    text-align: center;
+}
+
+
+
+#frm
+{
+    height: 380px;
+    width: 300px;
+    background-color: #c8c2c2;
+    margin-left: 450px;
+    margin-top: 20px;
+    padding-left: 45px;
+}
+#frm>h2 
+{
+font-size: 30px;
+margin-left: -10px;
+}
+
+#frm>form>button
+{
+    margin-left: -38px;
+    border-radius: 8px;
+    padding: 3px 120px  ;
+    color: white;
+    background-color: rgb(234, 31, 8);
+    font-weight: 500;
+    border: none;
+   
+}
+#frmnav
+{
+height: 30px;
+width: 100%;
+background-color: rgb(230, 224, 224);
+display: flex;
+text-align: center;
+justify-content: center;
+}
+#frmnav>h3
+{
+    font-weight: 100;
+}
+#frmnav>h2
+{
+    font-weight: 100;
+    font-size: 20px;
+    color: rgb(227, 52, 32);
+    margin-left: 8px;
+}
+
+
+
+
+
+</style>
+<%-include("nav.ejs")%>
+
+<link rel="stylesheet" href="./stylesheets/nav.css">
+
+
+
+<div id="frm">
+    <h2>Update your detail</h2><br>     
+<form action="/update/<%= dets._id%>" method="post">
+
+
+
+<input value="<%= dets.name%>"   type="text" placeholder="name" name="name"><br><br>
+<input value="<%= dets.auther%>"  type="text" placeholder="auther" name="auther"><br><br>
+<input value="<%= dets.image%>"  type="url"  placeholder="book image" name="image"><br><br>
+<input value="<%= dets.descripction%>"  type="text" placeholder="descripction" name="descripction"><br><br>
+<input value="<%= dets.publication%>" type="text" placeholder="publication" name="publication"><br><br>
+<input value="<%= dets.prise%>" type="number" placeholder="prise" name="prise"><br><br>
+<input value="<%= dets.page%>" type="number" placeholder="page" name="page"><br><br>
+<input value="<%= dets.year%>" type="number" placeholder="year" name="year"><br><br>
+<button>update</button> <br> 
+<hr>
+
+</form></div></div>
+<%-include("footer.ejs")%>
+

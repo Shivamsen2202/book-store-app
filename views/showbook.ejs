@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="./stylesheets/style.css">
+  
+
+</head>
+<body>
+    
+ <%-include("nav.ejs")%>
+   
+   
+    <h1>BOOK DETAIL</h1><br>
+<% dets.forEach(function(book,index){%>
+    <div id="dd">
+    <div id="d">
+        <div id="d1">
+            
+    <h2>
+        1.Name -  <%= book.name%>
+    </h2>
+  
+    
+    <h2>
+        2.Auther -<%= book.auther%>
+    </h2>
+
+
+    <!--  -->
+    <a href="/detail/<%=book._id%>"><button>explore more</button></a><br>
+    
+    
+</div></div>
+</div>
+    <%  })  %>
+
+</body>
+</html>

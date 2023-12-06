@@ -1,0 +1,227 @@
+<%-include("header.ejs")%>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}html,
+body{
+    width: 100%;
+    min-height: 200%;
+
+}
+#b1>a>button
+    {
+        padding: 8px 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+        background-color: rgba(9, 9, 9, 0.79);
+        color: aliceblue;
+        border: none;
+        border-radius: 50px;
+        font-size: 50px;
+    }
+    #b1 >a>button:hover
+    {
+        background-color: black;
+        }
+        #b2>a>button
+    {
+        padding: 8px 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+        background-color: rgba(9, 9, 9, 0.79);
+        color: aliceblue;
+        border: none;
+        border-radius: 50px;
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+    #b2>a>button:hover
+    {
+        background-color: black;
+
+    }
+    #i1
+    { width: 100%;
+    }
+    #i1>img{
+    width: 100%;
+    }
+    #b
+    {
+        display: flex;
+    }
+#page1
+{
+    height: 60%;
+    width: 100%;
+}
+#page1>h1
+{
+    color: rgb(220, 10, 10);
+    font-size: 50px;
+}
+#www{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 2px 10px solid black;
+}
+#w{
+    width: 280px;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+    margin: 4px 8px;
+    border-radius: 10px;
+    border: 4px black solid;
+    overflow: hidden;
+    transition: cubic-bezier(0.19, 1, 0.22, 1).7s;
+}
+#wt
+{
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(7, 7, 7, 0.848));
+   text-align: center;
+    padding: 0px 10px;
+    color: #ffff;
+}
+#tt
+{
+    position: relative;
+    top: 20%;
+   
+}
+#w:hover #wt
+{
+    background-color: #00000084;
+    bottom: 0;
+    transition: all ease 1s;
+}
+#w>img:hover
+{
+    height: 150%;
+    width: 150%;
+    transition: all ease 12s;
+}
+#w>img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding: 8px 8px;
+}
+#wt>#tt>h3{
+    margin-top: 20px;
+}
+span{
+    color: salmon;
+}
+#wt>#tt>button
+{
+    padding: 5px 18px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    background-color: #ed1c24;
+    color: rgb(255, 244, 240);
+}
+#wt>#tt>button:hover
+{
+    background-color: royalblue;
+}
+
+</style>
+<%-include("nav.ejs")%>
+<link rel ="stylesheet" href="./stylesheets/index.css">
+<div id="i1"><img src="https://store.lexisnexis.in/image/cache/catalog/slideshow/new_slider/Store_IN_Web-Banner_1920x550-1920x550.jpg" alt="">
+</div>
+
+  <div id ="b">
+<div id="b1">
+<a href="https://store.lexisnexis.in/packages"><button>Buy eBooks Subscription</button></a>
+</div>
+<div id="b2">
+    <a href="https://lexisnexis.in/journals.php"><button>Buy journal Subscription
+    </button></a>
+</div>
+</div><hr>
+<div id="page1">
+    <h1>NEW RELEASES</h1>
+    <div id="www">
+        <div id="w">
+          
+            <img src="https://store.lexisnexis.in/image/cache/catalog/9788119403035-400x533.jpg" alt="">
+            <div id="wt">
+                <div id="tt">
+                <h3>Criminal Law</h3>
+                <h2>Author : P S A Pillai</h2>
+                <h2>Price: <span> 1550.00</span> </h2>
+                <button>Add to cart</button>
+            </div>
+               </div>
+        </div>
+        <div id="w">
+            <img src="https://store.lexisnexis.in/image/cache/catalog/INK8119403172-400x533.jpg" alt="">
+     
+            <div id="wt">
+                <div id="tt">
+                    <h3>Company Meetings - Law, Practice and Procedure</h3>
+                    <h2>Author : K R Chandratre</h2>
+                    <h2>Price : <span> 1995.00</span> </h2>
+                    <button>Add to cart</button>
+                </div>
+           </div>
+
+        </div>
+        <div id="w">
+            <img src="https://store.lexisnexis.in/image/cache/catalog/INK8119403141-400x533.jpg" alt="">
+        
+        <div id="wt">
+            <div id="tt">
+                <h3>
+                    Principles of Administrative Law    </h3>
+                <h2> Author :  M P Jain & S N Jain
+
+                </h2>
+                <h2>Price: <span> 1197.00</span> </h2>
+                <button>Add to cart</button>
+            </div>
+           </div>
+        </div>
+        <div id="w">
+            <img src="https://store.lexisnexis.in/image/cache/catalog/INK8119403189-400x533.jpg" alt="">
+        
+        <div id="wt">
+            <div id="tt">
+                <h3>  Law of Affidavits   </h3>
+                <h2> Author :  S Parameswaram
+
+                </h2>
+                <h2>Price: <span> 1395.00</span> </h2>
+                <button>Add to cart</button>
+            </div>
+           </div>
+        </div>
+        <div id="w">
+            <img src="https://store.lexisnexis.in/image/cache/catalog/INK8119403042-400x533.jpg" alt="">
+        
+        <div id="wt">  <div id="tt">
+            <h3>Building and Engineering Contracts- Law and Practice</h3>
+            <h2>Author : Dr P C Markanda</h2>
+            <h2>Price: <span> 4995.00</span> </h2>
+            <button>Add to cart</button>
+            </div>
+           </div>
+        </div>
+    </div>
+
+</div>
+<%-include("footer.ejs")%>

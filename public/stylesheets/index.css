@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}html,
+body{
+    width: 100%;
+    min-height: 110%;
+}
+#home1>img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#home2
+{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(238, 227, 227);
+    display: flex;
+}
+#q1
+{
+    height: 150px;
+    width: 300px;
+    background-color: #fffafa;
+    margin: 30px  50px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px solid #fff;
+    cursor: pointer;
+}
+#q1>img
+{
+    margin: 20px 40px;
+  
+}
+#q1>h2
+{
+    font-size: 35px;
+   text-align: center;
+   margin-top: -23px;
+    color: rgb(218, 67, 51);
+}
+#q1>h4
+{
+  text-align: center;
+    font-size: 16px;
+    
+}
+#q1:hover
+{
+ background-color: #e4d8d8;
+}
+#k
+{
+    width: 100%;
+    height: 200px;
+   
+}
+#k>h2
+{
+    text-align: center;
+    margin-top: 40px;
+}
+#k>p
+{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+}
+#k>button
+{
+    padding: 5px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(201, 58, 43);
+    margin-top: 20px;
+    margin-left: 550px;
+    margin-bottom: 4px;
+}
+#k>button>a
+{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    
+}
+#k>button:hover
+{
+    background-color: rgb(29, 27, 27);
+}
+
+
+
+
+
+
+
+

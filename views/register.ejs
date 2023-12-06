@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/register.css">
+</head>
+<body>
+    
+
+<%-include("nav.ejs")%>
+<div id="i1"><img src="https://www.lexisnexis.in/images/contact-us.jpg" alt=""></div>
+<div id="frmnav">
+    <h2>Home >></h2>
+    <h3>Contact-us </h3>
+    
+</div>
+
+<div id="frm">
+<h2>Enter your detail</h2><br>
+
+
+
+
+      <form action="/registers" method="post">
+
+
+    <input type="text" placeholder="name" name="name"><br><br>
+    <input type="text" placeholder="auther" name="auther"><br><br>
+    <input type="url"  placeholder="book image" name="image"><br><br>
+    <input type="text" placeholder="descripction" name="descripction"><br><br>
+    <input type="text" placeholder="publication" name="publication"><br><br>
+    <input type="number" placeholder="prise" name="prise"><br><br>
+    <input type="number" placeholder="page" name="page"><br><br>
+    <input type="number" placeholder="year" name="year"><br><br>
+    <button>Submit</button> 
+
+
+
+</form>
+</div>
+    
+</body>
+</html>
